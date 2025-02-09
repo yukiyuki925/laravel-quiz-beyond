@@ -25,11 +25,15 @@ class CategoryController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * カテゴリー新規登録処理
      */
     public function store(StoreCategoryRequest $request)
     {
-        //
+        $category = new Category();
+        $category->name = $request->name;
+        $category->description = $request->description;
+        $category->save();
+        return redirect()->route('admin.top');
     }
 
     /**
