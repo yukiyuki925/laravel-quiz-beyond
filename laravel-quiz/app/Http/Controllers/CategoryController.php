@@ -29,9 +29,16 @@ class CategoryController extends Controller
      */
     public function store(StoreCategoryRequest $request)
     {
+        // 必須バリデーション
+        $validate = $request->validate([
+            'name' => 'required',
+            'description' => 'required',
+        ]);
+
+        // 保存処理
         $category = new Category();
-        $category->name = $request->name;
-        $category->description = $request->description;
+        $category->name = $validate['name'];
+        $category->description = $validate['description'];
         $category->save();
         return redirect()->route('admin.top');
     }
