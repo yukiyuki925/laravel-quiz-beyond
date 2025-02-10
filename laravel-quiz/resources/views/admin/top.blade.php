@@ -45,7 +45,7 @@
                         <tr>
                             <td class="px-4 py-3">1</td>
                             <td class="px-4 py-3">PHP</td>
-                            <td class="px-4 py-3">2024-6-16</td>
+                            <td class="px-4 py-3">2025-6-16</td>
                             <td class="px-4 py-3 text-lg text-gray-900"> <button
                                     class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">詳細</button>
                             </td>
